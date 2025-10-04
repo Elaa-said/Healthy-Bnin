@@ -1,0 +1,2 @@
+[1027/215734.690:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\ala\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\c1a44344-64fb-4495-b79b-0eab9dfbbea0: Le chemin d’accès spécifié est introuvable. (0x3)
+[1027/215734.719:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)

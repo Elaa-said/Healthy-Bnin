@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Book Store</title>
+    <style>
+        .names {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: black;
+            font-size: 15px;
+        }
+
+        h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: turquoise;
+            font-size: 50px;
+            text-align: center;
+            /* font-weight:  */
+        }
+
+        .flexbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+
+        }
+
+        .cart {
+            margin: 80px auto;
+        }
+
+        .down {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        th {
+            text-align: left;
+            padding: 5px;
+            color: white;
+            font-weight: normal;
+            background: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        td {
+            padding: 10px 5px
+        }
+
+        td input {
+            width: 40px;
+            height: 30px;
+            padding: 5px;
+        }
+
+        td a {
+            color: palevioletred;
+            font-size: 12px;
+        }
+
+        td img {
+            width: 80;
+            height: 80px;
+            margin-right: 10px;
+
+        }
+
+        .bigtitle {
+            text-align: center;
+            font-size: 70px;
+        }
+
+        .lucida {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: initial;
+        }
+
+        .button {
+            position: relative;
+            width: 160px;
+            padding: 5px;
+            font-size: 15px;
+            color: crimson;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 10px;
+            border: 2px solid crimson;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .total {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .totaltable {
+            border-top: 3px solid black;
+            width: 200%;
+            max-width: 400px;
+        }
+
+        .totalprice {
+            text-align: left;
+            font-size: 25px;
+        }
+
+        .totalprice1 {
+            text-align: left;
+            font-size: 25px;
+        }
+
+        td:last-child {
+            text-align: right;
+        }
+
+        .button2 {
+            position: relative;
+            width: 160px;
+            padding: 20px;
+            font-size: 15px;
+            color: turquoise;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 800;
+            border: 5px solid turquoise;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            cursor: pointer;
+            border-radius: 100px;
+        }
+
+        .button2:hover {
+            box-shadow: 0 5px 50px 0;
+        }
+
+        .box {
+            padding: 60px;
+            background-image: url(res/p1.jp);
+            background-repeat: no-repeat;
+        }
+
+        .button3 {
+            position: relative;
+            width: 80px;
+            padding: 3px;
+            font-size: 10px;
+            color: crimson;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 10px;
+            border: 2px solid crimson;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .likebutton {
+            text-align: end;
+        }
+
+        .div {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flexbox1 {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+
+        .img {
+            border-radius: 8px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="bigtitle box">Book Depository</h1>
+    </header>
+    <h2>BESTSELLERS</h2>
+    <main class="flexbox1">
+        <div class="flexbox">
+            <h3 class="names">How to stay human in a f*cked-up world</h3>
+            <img src="res/p4.jpg" class="img">
+            <div>
+                <h5>40dt</h5>
+                <button class="button">ADD TO CART</button>
+                <br>
+                <br>
+                <button type="button" onclick="chcolor(this)" class="likebutton">Like</button>
+            </div>
+        </div>
+
+        <div class="flexbox">
+            <h3 class="names">The girl on the train</h3>
+            <img src="res/train.jpg" class="img">
+            <div>
+                <h5>30dt</h5>
+                <button class="button">ADD TO CART</button>
+                <br>
+                <br>
+                <button type="button" onclick="chcolor(this)" class="likebutton">Like</button>
+            </div>
+        </div>
+
+        <div class="flexbox">
+            <h3 class="names">Paper towns</h3>
+            <img src="res/towns.jpg">
+            <div>
+                <h5>30dt</h5>
+                <button class="button">ADD TO CART</button>
+                <br>
+                <br>
+                <button type="button" onclick="chcolor(this)" class="likebutton">Like</button>
+            </div>
+        </div>
+    </main>
+    <main class="flexbox1">
+        <div class="flexbox">
+            <h3 class="names">We should all be feminists</h3>
+            <img src="res/p5.jpg">
+            <div>
+                <h5>25dt</h5>
+                <button class="button">ADD TO CART</button>
+                <br>
+                <br>
+                <button type="button" onclick="chcolor(this)" class="likebutton">Like</button>
+            </div>
+        </div>
+        <div class="flexbox">
+            <h3 class="names">Rich dad Poor dar</h3>
+            <img src="res/rich.jpg">
+            <div>
+                <h5>40dt</h5>
+                <button class="button">ADD TO CART</button>
+                <br>
+                <br>
+                <button type="button" onclick="chcolor(this)" class="likebutton">Like</button>
+            </div>
+        </div>
+        <div class="flexbox">
+            <h3 class="names">It ends with us</h3>
+            <img src="res/ends.jpg">
+            <div>
+                <h5>30dt</h5>
+                <button class="button">ADD TO CART</button>
+                <br>
+                <br>
+                <button type="button" onclick="chcolor(this)" class="likebutton">Like</button>
+            </div>
+        </div>
+    </main>
+    <div>
+        </main>
+        <h2 class="cart">CART</h2>
+        <div>
+            <table class="table">
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/p4.jpg">
+                            <div class="lucida">
+                                <p>How to stay human in a f*cked-up world</p>
+                                <small>Price: 40dt</small>
+                                <br>
+                                <br>
+                                <button class="button3">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(40,this.value)"></td>
+                    <td class="prices">40</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/train.jpg">
+                            <div class="lucida">
+                                <p>The girl on the train</p>
+                                <small>Price: 30dt</small>
+                                <br>
+                                <br>
+                                <button class="button3">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(30,this.value)"></td>
+                    <td class="prices">30</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/towns.jpg">
+                            <div class="lucida">
+                                <p>Paper towns</p>
+                                <small>Price:30dt </small>
+                                <br>
+                                <br>
+                                <button class="button3">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(30,this.value)"></td>
+                    <td class="prices">30</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/p5.jpg">
+                            <div class="lucida">
+                                <p>We should all be feminists</p>
+                                <small>Price:25dt</small>
+                                <br>
+                                <br>
+                                <button class="button3" onclick="removeelem(this)">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(25,this.value)"></td>
+                    <td class="prices">25</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/rich.jpg">
+                            <div class="lucida">
+                                <p>Rich dad poor dad</p>
+                                <small>Price:40dt </small>
+                                <br>
+                                <br>
+                                <button class="button3" onclick="removeelem(this)">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(40,this)"></td>
+                    <td class="prices">40</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/ends.jpg">
+                            <div class="lucida">
+                                <p>It ends with us</p>
+                                <small>Price: 25dt</small>
+                                <br>
+                                <br>
+                                <button class="button3" onclick="removeelem(this)">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(25,this)"></td>
+                    <td class="prices">25</td>
+                </tr>
+            </table>
+            <div class="total">
+                <table class="totaltable">
+                    <tr>
+                        <td class="totalprice1">Total</td>
+                        <td id="prixtot" class="totalprice">190dt</td>
+                        <br>
+                        <br>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="div">
+            <button class="button2">Purchase</button>
+        </div>
+    </div>
+    <script language="javascript">
+        function removeelem(b) {
+            console.log(b)
+            b.parentElement.parentElement.parentElement.parentElement.remove()
+            // console.log(thebutton.parentElement.parentElement)
+        }
+        function total() {
+            var price = document.getElementsByClassName("prices")
+
+            for (i = 0; i < price.length; i++) {
+                sum = 0;
+                sum += price[i].innerHTML;
+            }
+            document.getElementById("prixtot").innerHTML = sum + " dt"
+        }
+        function qte(q, p) {
+            p.parentElement.parentElement.lastElementChild.innerHTML = q * p.value;
+            //  console.log(p.parentElement.parentElement.lastElementChild.innerHTML);
+            total()
+        }
+
+        // let button = document.getElementsByClassName('likebutton')
+       function chcolor (b) {
+       b.style.color = "crimson"
+        }
+        
+        
+    </script>
+</body>
+
+</html>
